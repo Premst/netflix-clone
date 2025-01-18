@@ -1,0 +1,747 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Netflix Sans", " Helvetica Neue", " Segoe UI", Roboto, Ubuntu, sans-serif;
+
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.774), rgba(5, 5, 5, 0.705)), url(/assets/main-bg-image.jpg);
+    /* background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    color: aliceblue; */
+
+    background-size: cover;
+    /* Ensures the image covers the container */
+    background-position: center;
+    /* Centers the image */
+    height: 100vh;
+    /* Full viewport height */
+    display: flex;
+    /* Enables Flexbox */
+    justify-content: center;
+    /* Centers content horizontally */
+    align-items: center;
+    /* Centers content vertically */
+    position: relative;
+
+}
+
+
+.nav {
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+.logo {
+    /* color: rgb(229, 9, 20); */
+    margin-left: 10rem;
+    position: absolute;
+}
+
+.logo img {
+    width: 10vw;
+}
+
+.login {
+    position: absolute;
+    right: 0;
+    display: flex;
+    margin-right: 10rem;
+    justify-content: space-between;
+}
+
+.select1 {
+    margin-right: 1rem;
+    border-radius: 0.25rem;
+    padding: 0.1rem;
+
+}
+
+/* 
+.select1:active{
+        border: 1px solid #ccc;
+} */
+
+label {
+    position: absolute;
+    color: white;
+    padding: 0.5rem;
+    pointer-events: none;
+}
+
+#langDrop {
+    margin-left: 5rem;
+}
+
+.select1 select {
+    appearance: none;
+    /* Removes default styling */
+    background: transparent;
+    /* Makes the background transparent */
+    padding: 0.25rem 2rem;
+    color: #fff;
+    /* Text color */
+    /* vertical-align: text-top; */
+    width: auto;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2rem;
+    border-radius: 0.25rem;
+    /* outline: none; */
+    cursor: pointer;
+}
+
+select option {
+    color: black;
+}
+
+select option:hover {
+    color: white;
+}
+
+#signBtn {
+    border: 0;
+    cursor: pointer;
+    fill: currentColor;
+    position: relative;
+    transition-duration: 250ms;
+    transition-property: background-color, border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.68, 0.06);
+    vertical-align: text-top;
+    width: auto;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+}
+
+
+.main-main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10rem 20rem 0 20rem; */
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    color: aliceblue;
+    /* background-color: aqua; */
+    width: 35%;
+}
+
+
+
+.main-text h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.main-text p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* 
+.main img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+} */
+
+.sign-up-form {
+    color: white;
+    /* position: absolute;
+    top: 5rem; */
+    /* bottom: 13rem; */
+    /* background-color: yellow; */
+    margin-top: 2rem;
+    width: 100%;
+
+}
+
+
+.sign-up {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+input {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    width: auto;
+    padding: 0.75rem 1.5rem;
+    /* filter: opacity(0%); */
+    appearance: none;
+    background: transparent;
+    background-clip: border-box;
+    border: 1px solid white;
+    border-radius: 0.25rem;
+    color: white;
+    margin: 1rem;
+
+
+}
+
+.sign-up button {
+    font-size: 1.125rem;
+    cursor: pointer;
+    width: auto;
+    font-weight: 500;
+    padding: 0.95rem 1.5rem;
+    background: rgb(229, 9, 20);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: normal;
+    line-height: 1;
+    appearance: none;
+    border: 0;
+    border-radius: 0.25rem;
+    margin: 1rem;
+}
+
+.sign-up button i {
+    margin-left: 0.25rem;
+    font-size: 1.5rem;
+}
+
+.curved-line {
+    position: relative;
+    height: 100px;
+    /* Adjust height */
+    background: linear-gradient(to right, #ff005a, #ff9e00);
+    border-radius: 50% 50% 0 0;
+    /* Creates the curve */
+    overflow: hidden;
+    background-color: red;
+}
+
+.curved-line::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #000;
+    /* Black background */
+}
+
+/* ------------------ main-container after home page --------- */
+
+.main-container {
+    margin: 0 9rem;
+}
+
+.trending {
+    margin-top: 1rem;
+}
+
+.select-list {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.select2 {
+    margin-right: 1rem;
+}
+
+.select2 select {
+    appearance: none;
+    /* Removes default styling */
+    background: transparent;
+    /* Makes the background transparent */
+    padding: 0.5rem 1rem;
+    color: #fff;
+    /* Text color */
+    /* vertical-align: text-top; */
+    width: auto;
+    font-size: 0.875rem;
+    font-weight: 500;
+    min-height: 2rem;
+    border-radius: 0.25rem;
+    /* outline: none; */
+    cursor: pointer;
+    background-color: #4e4e4e7b;
+}
+
+#drop1 {
+    margin-left: 3rem;
+}
+
+#drop2 {
+    margin-left: 4rem;
+}
+
+.trending-pic {
+    position: relative;
+    /* Set as relative so children can use absolute positioning */
+    display: flex;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    /* Ensure content fits within bounds */
+}
+
+
+
+.cards ul {
+    display: flex;
+}
+
+.cards ul li {
+    list-style: none;
+    width: 100%;
+    margin: 1rem;
+}
+
+
+.cards ul li button {
+    display: flex;
+    position: relative;
+}
+
+.bgImage img {
+    border-radius: 1rem;
+    min-width: 20%;
+}
+
+.cards ul li button .imgNo {
+    font-size: 6rem;
+    font-weight: 800;
+    position: absolute;
+    /* background-color: red; */
+    bottom: 1rem;
+    left: -1rem;
+    -webkit-text-stroke: 0.125rem white;
+
+}
+
+.cards button {
+    border-radius: 1rem;
+}
+
+
+
+
+
+.cardPre {
+    /* width: 100%; */
+    /* display: flex; */
+    /* z-index: 1; */
+    /* justify-content: center; */
+
+    position: absolute;
+    /* Ensure it's positioned relative to the parent */
+    top: 50%;
+    /* Center it vertically */
+    left: 0.5rem;
+    /* Align it to the right edge with a small margin */
+    transform: translateY(-50%);
+    /* Center alignment vertically */
+    z-index: 10;
+    /* Ensure it appears above other elements */
+
+}
+
+.cardPre button {
+    background-color: #4e4e4e7b;
+    color: white;
+    border: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+
+.cardPre i {
+    width: 50%;
+    padding: 5rem 0.5rem;
+    font-size: 2rem;
+
+}
+
+
+
+.cardNext {
+    position: absolute;
+    /* Ensure it's positioned relative to the parent */
+    top: 50%;
+    /* Center it vertically */
+    right: 0.5rem;
+    /* Align it to the right edge with a small margin */
+    transform: translateY(-50%);
+    /* Center alignment vertically */
+    z-index: 10;
+    /* Ensure it appears above other elements */
+}
+
+.cardNext button {
+    background-color: #4e4e4e7b;
+    color: white;
+    border: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+.cardNext i {
+    width: 50%;
+    padding: 5rem 0.5rem;
+    font-size: 2rem;
+}
+
+
+/* .cardPre, .cardNext {
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.cardPre {
+    left: 10rem;
+}
+
+.cardNext {
+    right: 10rem;
+} */
+
+
+.reason-to-join {
+    margin-top: 2rem;
+}
+
+.rcards-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+}
+
+.rcards {
+    width: 17rem;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    margin: 0.5rem;
+    border-radius: 1rem;
+    /* display: flex; */
+    flex-direction: column;
+    position: relative;
+    /* flex: 3rem; */
+    /* flex-wrap: wrap; */
+    flex-grow: 1;
+
+}
+
+
+.rcards h3 {
+    margin: 1rem;
+}
+
+.rcards p {
+    margin: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 6rem;
+}
+
+.rcards i {
+    font-size: 3rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #ff005a;
+    margin: 1rem;
+}
+
+
+/* ---------------------- FAQ ---------------- */
+
+/* .faqlist{
+    width: 100%;
+    height: 4rem;
+    background: rgb(45, 45, 45);;
+    margin: 0.5rem 0;
+} */
+
+.faq {
+    margin-top: 2.5rem;
+}
+
+.faq h2 {
+    margin-bottom: 1rem;
+}
+
+.faqlist h3,
+.faqlist p,
+.faqlist i {
+    font-weight: 50;
+    margin: 0 1rem;
+}
+
+.faqlist .first-div {
+    width: 100%;
+    height: 3.5rem;
+    background: rgb(45, 45, 45);
+    ;
+    margin: 0.5rem 0;
+    /* padding: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.first-div:hover {
+    background: rgba(92, 88, 88, 0.742);
+}
+
+
+.second-div {
+    width: 100%;
+    background: rgb(45, 45, 45);
+    ;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -0.35rem;
+
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+
+.second-div p {
+    margin: 1rem;
+}
+
+
+/* -------------- footer --------------- */
+
+
+.f1-form {
+    text-align: center;
+}
+
+.fLinks {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.fLinks p {
+    width: 20%;
+    margin: 1rem 3rem 0 0;
+    cursor: pointer;
+}
+
+.f2 {
+    margin-top: 2rem;
+}
+
+.f2,
+.f3 {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#f3-p {
+    margin: 2rem 0 5rem -0.25rem;
+}
+
+
+
+/* ----------- responsive -------------- */
+
+/* Extra Large Devices (min-width: 1200px) */
+@media (max-width: 1200px) {
+
+    .logo {
+        margin-left: 6rem;
+    }
+
+    .login {
+        margin-right: 6rem;
+    }
+
+    .main-main-text {
+        width: 45%;
+    }
+
+    .main-container {
+        margin: 0 6rem;
+    }
+}
+
+/* Large Devices (min-width: 992px) */
+@media (max-width: 992px) {
+
+    .logo {
+        margin-left: 4rem;
+    }
+
+    .login {
+        margin-right: 4rem;
+    }
+
+    .main-main-text {
+        width: 60%;
+    }
+
+    .main-container {
+        margin: 0 4rem;
+    }
+
+}
+
+
+/* Medium Devices (min-width: 768px) */
+@media (max-width: 768px) {
+
+    .logo img {
+        width: 15vw;
+    }
+
+    .logo {
+        margin-left: 2rem;
+    }
+
+    .login {
+        margin-right: 2rem;
+    }
+
+    .main-main-text {
+        width: 70%;
+    }
+
+    .main-container {
+        margin: 0 2rem;
+    }
+
+    .sign-up button {
+        padding: 0.95rem 1rem;
+    }
+}
+
+/* Small Devices (min-width: 576px) */
+@media (max-width: 576px) {
+
+    .logo img {
+        width: 25vw;
+    }
+
+
+    .logo {
+        margin-left: 2rem;
+    }
+
+    .login {
+        margin-right: 2rem;
+    }
+
+    .main-main-text {
+        width: 80%;
+    }
+
+    .main-container {
+        margin: 0 2rem;
+    }
+
+    .sign-up {
+        flex-direction: column;
+    }
+
+    .sign-up input {
+        width: 90%;
+    }
+
+    .sign-up button {
+        margin-top: -0.3rem;
+        padding: 0.5rem 0.7rem 0.7rem 0.7rem;
+    }
+
+
+    .main-text h2 {
+        font-size: 2rem;
+    }
+
+    .rcards {
+        width: 40rem;
+    }
+
+    .fLinks p {
+        width: 50%;
+    }
+
+
+    .main{
+        height: 90vh;
+    }
+
+
+    .select-list {
+        display: block;
+    }
+
+    .select2 {
+        margin-top: 0.5rem;
+    }
+
+    .select2 select {
+        width: 100%;
+    }
+
+    #drop1,
+    #drop2 {
+        display: flex;
+        position: absolute;
+        right: 3rem;
+    }
+
+
+
+}
+
+@media (max-width: 400px) {
+    .logo {
+        margin-left: 1rem;
+    }
+
+    .login {
+        margin-right: 1rem;
+    }
+
+    .main-main-text {
+        width: 90%;
+    }
+
+    .main-container {
+        margin: 0 1rem;
+    }
+}

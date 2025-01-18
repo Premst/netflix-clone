@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <link rel="icon" href="assets/netflix-icon.png">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="main">
+            <div class="nav">
+                <div class="logo">
+                    <!-- <h1 id="logo">NETFLIX</h1> -->
+                    <img src="assets/netflix-logo.png" alt="">
+                </div>
+                <div class="login">
+                    <div class="select1" for="lang">
+                        <label id="langIcon" for="lang"><i class="fa fa-language"></i></label>
+                        <label id="langDrop" for="lang"><i class="fa fa-caret-down"></i></label>
+                        <select name="lang" id="lang" required>
+                            <!-- <option value="" selected>hi</option> -->
+                            <option value="english">English</option>
+                            <option value="hindi">हिन्दी</option>
+                        </select>
+                    </div>
+
+                    <div id="sign-in">
+                        <button id="signBtn">Sign In </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="main-main-text">
+                <div class="main-text">
+                    <h2>Unlimited movies, TV shows and more</h2>
+                    <p>Starts at ₹149. Cancel at any time.</p>
+                </div>
+
+                <div class="sign-up-form">
+                    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                    <div class="sign-up">
+                        <input type="email" placeholder="Email Address" minlength="5" maxlength="50" name="email">
+                        <button>Get Started <i class="fa fa-angle-right"></i></button>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- <div class="curved-line"></div> -->
+        </div>
+
+        <div class="main-container">
+
+            <div class="trending">
+                <h2>Treanding Now</h2>
+                <div class="select-list">
+                    <div class="select2">
+                        <label id="drop1" for="national"><i class="fa fa-caret-down"></i></label>
+                        <select name="nationality" id="national">
+                            <option value="india">India</option>
+                            <option value="global">Global</option>
+                        </select>
+                    </div>
+                    <div class="select2">
+                        <label id="drop2" for="movies"><i class="fa fa-caret-down"></i></label>
+                        <select name="nationality" id="movies">
+                            <option value="movies">Movies</option>
+                            <option value="tvshows">TV Shows</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="trending-pic">
+                <div class="cardPre arrow left" onclick="moveSlide(-1)">
+                    <button class="cardPre">
+                        <i class="fa fa-angle-left"></i>
+                    </button>
+                </div>
+                <div class="cards slider-wrapper">
+                    <ul>
+                        <li>
+                            <button>
+                                <span class="bgImage slide"><img src="assets/1.webp" alt="image1"></span>
+                                <span class="imgNo">1</span>
+                            </button>
+                        </li>
+                        <li><button><span class="bgImage slide"><img src="assets/2.webp" alt="image2"></span><span
+                                    class="imgNo">2</span></button></li>
+                        <li><button><span class="bgImage slide"><img src="assets/3.webp" alt="image3"></span><span
+                                    class="imgNo">3</span></button></li>
+                        <li><button><span class="bgImage slide"><img src="assets/4.webp" alt="image4"></span><span
+                                    class="imgNo">4</span></button></li>
+                        <li><button><span class="bgImage slide"><img src="assets/5.webp" alt="image5"></span><span
+                                    class="imgNo">5</span></button></li>
+                        <li><button><span class="bgImage slide"><img src="assets/6.webp" alt="image6"></span><span
+                                    class="imgNo">6</span></button></li>
+                        <li><button><span class="bgImage slide"><img src="assets/7.webp" alt="image7"></span><span
+                                    class="imgNo">7</span></button></li>
+                        <li><button><span class="bgImage slide"><img src="assets/8.webp" alt="image8"></span><span
+                                    class="imgNo">8</span></button></li>
+                        <li><button><span class="bgImage slide"><img src="assets/9.webp" alt="image9"></span><span
+                                    class="imgNo">9</span></button></li>
+                        <li><button><span class="bgImage slide"><img src="assets/10.webp" alt="image10"></span><span
+                                    class="imgNo">10</span></button></li>
+
+                    </ul>
+                </div>
+                <div class="cardNext arrow right" onclick="moveSlide(1)">
+                    <button class="cardNext">
+                        <i class="fa fa-angle-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="reason-to-join">
+                <h2>More resons to join</h2>
+
+                <div class="rcards-list">
+
+                    <div class="rcards">
+                        <h3>Enjoy on your TV</h3>
+                        <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                        <i class="fa fa-tv"></i>
+                    </div>
+                    <div class="rcards">
+                        <h3>Download your shows to watch offline</h3>
+                        <p>Save your favourites easily and always have something to watch.</p>
+                        <i class="fa fa-download"></i>
+                    </div>
+                    <div class="rcards">
+                        <h3>Watch everywhere</h3>
+                        <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+                        <i class="fa fa-binoculars"></i>
+                    </div>
+                    <div class="rcards">
+                        <h3>Create profile for kids</h3>
+                        <p>Send kids on adventures with their favorite characters in a space made just for them-free
+                            with your membership.</p>
+                        <i class="fa fa-group"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class=".faqLists">
+
+                    <div class="faqlist">
+                        <div id="first-div-1" class="first-div">
+                            <h3>What is Netflix?</h3>
+                            <div class="prIcon">
+                                <span id="plus-icon-1" class="icon"><i class="fa fa-plus"></i></span>
+                                <span id="remove-icon-1" class="icon hidden"><i class="fa fa-remove"></i></span>
+                            </div>
+                        </div>
+                        <div id="second-div-1" class="second-div hidden">
+                            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows,
+                                movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+                            <p>You can watch as much as you want, whenever you want, without a single ad – all for one
+                                low monthly price. There's always something new to discover, and new TV shows and movies
+                                are added every week!</p>
+                        </div>
+                    </div>
+
+                    <div class="faqlist">
+                        <div id="first-div-2" class="first-div">
+                            <h3>How much does Netflix cost?</h3>
+                            <div class="prIcon">
+                                <span id="plus-icon-2" class="icon"><i class="fa fa-plus"></i></span>
+                                <span id="remove-icon-2" class="icon hidden"><i class="fa fa-remove"></i></span>
+                            </div>
+                        </div>
+                        <div id="second-div-2" class="second-div hidden">
+                            <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for
+                                one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no
+                                contracts.</p>
+                        </div>
+                    </div>
+
+                    <div class="faqlist">
+                        <div id="first-div-3" class="first-div">
+                            <h3>Where can I watch?</h3>
+                            <div class="prIcon">
+                                <span id="plus-icon-3" class="icon"><i class="fa fa-plus"></i></span>
+                                <span id="remove-icon-3" class="icon hidden"><i class="fa fa-remove"></i></span>
+                            </div>
+                        </div>
+                        <div id="second-div-3" class="second-div hidden">
+                            <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web
+                                at netflix.com from your personal computer or on any internet-connected device that
+                                offers the Netflix app, including smart TVs, smartphones, tablets, streaming media
+                                players and game consoles.</p>
+                            <p>You can also download your favourite shows with the iOS or Android app. Use downloads to
+                                watch while you're on the go and without an internet connection. Take Netflix with you
+                                anywhere.</p>
+                        </div>
+                    </div>
+
+                    <div class="faqlist">
+                        <div id="first-div-4" class="first-div">
+                            <h3>How do I cancel?</h3>
+                            <div class="prIcon">
+                                <span id="plus-icon-4" class="icon"><i class="fa fa-plus"></i></span>
+                                <span id="remove-icon-4" class="icon hidden"><i class="fa fa-remove"></i></span>
+                            </div>
+                        </div>
+                        <div id="second-div-4" class="second-div hidden">
+                            <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily
+                                cancel your account online in two clicks. There are no cancellation fees – start or stop
+                                your account anytime.</p>
+                        </div>
+                    </div>
+
+                    <div class="faqlist">
+                        <div id="first-div-5" class="first-div">
+                            <h3>What can I watch on Netflix?</h3>
+                            <div class="prIcon">
+                                <span id="plus-icon-5" class="icon"><i class="fa fa-plus"></i></span>
+                                <span id="remove-icon-5" class="icon hidden"><i class="fa fa-remove"></i></span>
+                            </div>
+                        </div>
+                        <div id="second-div-5" class="second-div hidden">
+                            <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime,
+                                award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faqlist">
+                        <div id="first-div-6" class="first-div">
+                            <h3>Is Netflix good for kids?</h3>
+                            <div class="prIcon">
+                                <span id="plus-icon-6" class="icon"><i class="fa fa-plus"></i></span>
+                                <span id="remove-icon-6" class="icon hidden"><i class="fa fa-remove"></i></span>
+                            </div>
+                        </div>
+                        <div id="second-div-6" class="second-div hidden">
+                            <p>The Netflix Kids experience is included in your membership to give parents control while
+                                kids enjoy family-friendly TV shows and films in their own space.</p>
+                            <p>Kids profiles come with PIN-protected parental controls that let you restrict the
+                                maturity rating of content kids can watch and block specific titles you don’t want kids
+                                to see.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="f1">
+                    <div class="sign-up-form">
+                        <p class="f1-form">Ready to watch? Enter your email to create or restart your membership.</p>
+                        <div class="sign-up f1-form">
+                            <input type="email" placeholder="Email Address" minlength="5" maxlength="50" name="email">
+                            <button>Get Started <i class="fa fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="f2">
+                    <p>Questions? Call <u>000-111-222-333-4444</u></p>
+                    <div class="fLinks">
+                        <p><u>FAQ</u></p>
+                        <p><u>Help Centre</u></p>
+                        <p><u>Account</u></p>
+                        <p><u>Media</u></p>
+                        <p><u>Investor Relations</u></p>
+                        <p><u>Jobs</u></p>
+                        <p><u>Ways to Watch</u></p>
+                        <p><u>Terms of Use</u></p>
+                        <p><u>Privacy</u></p>
+                        <p><u>Cookie Preferences</u></p>
+                        <p><u>Corporate Information</u></p>
+                        <p><u>Contact Us</u></p>
+                        <p><u>Speed Test</u></p>
+                        <p><u>Legal Notices</u></p>
+                        <p><u>Only on Netflix</u></p>
+                    </div>
+                </div>
+                <div class="f3">
+                    <div class="select1" for="lang">
+                        <label id="langIcon" for="lang"><i class="fa fa-language"></i></label>
+                        <label id="langDrop" for="lang"><i class="fa fa-caret-down"></i></label>
+                        <select name="lang" id="lang" required>
+                            <!-- <option value="" selected>hi</option> -->
+                            <option value="english">English</option>
+                            <option value="hindi">हिन्दी</option>
+                        </select>
+                    </div>
+                    <p id="f3-p">Netflix India</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="text-align: center; font-size: 12px;">
+            This is a Netflix Clone created for educational purposes only. Not affiliated with Netflix, Inc.
+        </p>
+    </footer>
+    
+
+    <script src="js/alert.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+
+</html>
